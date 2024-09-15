@@ -1,5 +1,6 @@
 import matplotlib as mpl
 import matplotlib.font_manager as fm
+import seaborn
 import requests
 from pathlib import Path
 
@@ -124,10 +125,12 @@ mpl.rcParams['axes.labelcolor'] =  irag.color("gray")
 mpl.rcParams['axes.titlecolor'] =  irag.color("gray")
 mpl.rcParams['xtick.color'] = irag.color("light gray")
 mpl.rcParams['ytick.color'] = irag.color("light gray")
-mpl.rcParams['xtick.labelcolor'] = irag.color("soft black")
+mpl.rcParams['xtick.labelcolor'] = irag.color("gray")
 mpl.rcParams['ytick.labelcolor'] = irag.color("gray")
 mpl.rcParams['font.family'] = 'Roboto'
 mpl.rcParams['xaxis.labellocation'] = 'left'
 mpl.rcParams['yaxis.labellocation'] = 'top' 
 mpl.rcParams['axes.labelpad'] = 10.0  
 mpl.rcParams['axes.edgecolor'] = irag.color("light gray")
+
+seaborn.set_palette([irag.color('gray')])
